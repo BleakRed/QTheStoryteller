@@ -32,7 +32,7 @@
         <li Class="StorytellerCompProperties_OnOffCycle">
             <category>ThreatBig</category>
 				<minDaysPassed>30.0</minDaysPassed>
-				<onDays>4.6</onDays>
+				<onDadsys>4.6</onDadsys>
 				<offDays>30.0</offDays>
 				<minSpacingDays>0.5</minSpacingDays>
 				<numIncidentsRange>1~2</numIncidentsRange>
@@ -41,15 +41,15 @@
 					<li>Map_RaidBeacon</li>
 				</disallowedTargetTags>
         </li>
-        <li Class="StorytellerCompProperties_RandomMain"><!--			■ホームの脅威・弱(ランダムを代用) -->
+        <li Class="StorytellerCompProperties_RandomMain">
             <allowedTargetTags>
                 <li>Map_PlayerHome</li>
             </allowedTargetTags>
-            <minDaysPassed>3</minDaysPassed><!--										■○日経過後発生するようになる -->
+            <minDaysPassed>3</minDaysPassed>
             <mtbDays>3</mtbDays>
-            <maxThreatBigIntervalDays>30</maxThreatBigIntervalDays><!--					■最大襲撃間隔 -->
+            <maxThreatBigIntervalDays>30</maxThreatBigIntervalDays>
             <minIncChancePopulationIntentFactor>0.2</minIncChancePopulationIntentFactor>
-            <randomPointsFactorRange>1.25~1.3</randomPointsFactorRange><!--				■襲撃規模 -->
+            <randomPointsFactorRange>1.25~1.3</randomPointsFactorRange>
             <skipThreatBigIfRaidBeacon>true</skipThreatBigIfRaidBeacon>
             <categoryWeights>
                 <Misc>0</Misc>
@@ -214,14 +214,6 @@
             <incident>StrangerInBlackJoin</incident>
             <delayTicks>180</delayTicks>
           </li>
-    
-    
-    
-    
-    
-    
-    
-    
     </comps>
     </StorytellerDef>
 </Defs>
