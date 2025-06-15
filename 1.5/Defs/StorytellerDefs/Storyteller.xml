@@ -3,9 +3,8 @@
     <StorytellerDef ParentName="BaseStoryteller">
         <defName>QTheStoryTeller</defName>
         <label>Q The Storyteller</label>
-        <description>Q is a very forgiving storyteller that gives you a lot of time between raids and lots of quest.
-        She/He/They may seem easy but she gives you a little harder raids then normal.
-        </description>
+        <description>Q is a very forgiving storyteller that gives you a lot of time between raids and lots of quest. 
+          She/He/They may seem easy but she gives you a little harder raids then normal.</description>
         <portraitLarge>Storytellers/QBig</portraitLarge>
         <portraitTiny>Storytellers/QSmall</portraitTiny>
         <listOrder>80</listOrder>
@@ -32,7 +31,7 @@
         <li Class="StorytellerCompProperties_OnOffCycle">
             <category>ThreatBig</category>
 				<minDaysPassed>30.0</minDaysPassed>
-				<onDadsys>4.6</onDadsys>
+				<onDays>4.6</onDays>
 				<offDays>30.0</offDays>
 				<minSpacingDays>0.5</minSpacingDays>
 				<numIncidentsRange>1~2</numIncidentsRange>
@@ -52,12 +51,12 @@
             <randomPointsFactorRange>1.25~1.3</randomPointsFactorRange>
             <skipThreatBigIfRaidBeacon>true</skipThreatBigIfRaidBeacon>
             <categoryWeights>
-                <Misc>0</Misc>
+                <Misc>10</Misc>
                 <ThreatBig>9999</ThreatBig>
-                <OrbitalVisitor>0</OrbitalVisitor>
-                <FactionArrival>0</FactionArrival>
-                <ThreatSmall>0</ThreatSmall>
-                <ShipChunkDrop>0</ShipChunkDrop>
+                <OrbitalVisitor>100</OrbitalVisitor>
+                <FactionArrival>100</FactionArrival>
+                <ThreatSmall>1</ThreatSmall>
+                <ShipChunkDrop>5</ShipChunkDrop>
             </categoryWeights>
         </li>
         <li Class="StorytellerCompProperties_ThreatsGenerator">
