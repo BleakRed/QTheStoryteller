@@ -10,12 +10,12 @@
         <listOrder>80</listOrder>
 		<populationIntentFactorFromPopCurve Inherit="False">
 		    <points>
-				<li>0,  8.0</li>
-				<li>2,  8.0</li>
-				<li>10,  4.0</li>
-				<li>18,  2.0</li>
-				<li>24,  1.0</li>
-				<li>40, -1.0</li>
+				<li>0,  -1.0</li>
+				<li>2,  1.0</li>
+				<li>10,  2.0</li>
+				<li>18,  4.0</li>
+				<li>24,  8.0</li>
+				<li>40, 10.0</li>
 			</points>
 		</populationIntentFactorFromPopCurve>
         <populationIntentFactorFromPopAdaptDaysCurve Inherit="False">
@@ -33,8 +33,8 @@
 				<minDaysPassed>30.0</minDaysPassed>
 				<onDays>4.6</onDays>
 				<offDays>30.0</offDays>
-				<minSpacingDays>0.5</minSpacingDays>
-				<numIncidentsRange>1~2</numIncidentsRange>
+				<minSpacingDays>29</minSpacingDays>
+				<numIncidentsRange>1</numIncidentsRange>
 				<forceRaidEnemyBeforeDaysPassed>30</forceRaidEnemyBeforeDaysPassed>
 				<disallowedTargetTags>
 					<li>Map_RaidBeacon</li>
@@ -52,7 +52,7 @@
             <skipThreatBigIfRaidBeacon>true</skipThreatBigIfRaidBeacon>
             <categoryWeights>
                 <Misc>10</Misc>
-                <ThreatBig>9999</ThreatBig>
+                <ThreatBig>50</ThreatBig>
                 <OrbitalVisitor>100</OrbitalVisitor>
                 <FactionArrival>100</FactionArrival>
                 <ThreatSmall>1</ThreatSmall>
@@ -67,7 +67,7 @@
                 <allowedThreats>Raids</allowedThreats>
                 <onDays>2</onDays>
                 <offDays>28</offDays>
-                <minSpacingDays>1</minSpacingDays>
+                <minSpacingDays>28</minSpacingDays>
                 <numIncidentsRange>1</numIncidentsRange>
                 <minThreatPoints>500</minThreatPoints>
             </parms>
@@ -111,9 +111,9 @@
           </li>
           <li Class="StorytellerCompProperties_FactionInteraction">
             <incident>TraderCaravanArrival</incident>
-            <minDaysPassed>7</minDaysPassed>
+            <minDaysPassed>3</minDaysPassed>
             <baseIncidentsPerYear>10</baseIncidentsPerYear>
-            <minSpacingDays>7</minSpacingDays>
+            <minSpacingDays>2</minSpacingDays>
             <allowedTargetTags>
               <li>Map_PlayerHome</li>
             </allowedTargetTags>
@@ -131,7 +131,7 @@
             <incident>TravelerGroup</incident>
             <minDaysPassed>1</minDaysPassed>
             <baseIncidentsPerYear>12</baseIncidentsPerYear>
-            <minSpacingDays>1</minSpacingDays>
+            <minSpacingDays>5</minSpacingDays>
             <allowedTargetTags>
               <li>Map_PlayerHome</li>
             </allowedTargetTags>
@@ -200,7 +200,7 @@
             <allowedTargetTags>
               <li>World</li>
             </allowedTargetTags>
-            <minDaysPassed>15</minDaysPassed>
+            <minDaysPassed>7</minDaysPassed>
             <mtbDays>7</mtbDays>
           </li>
           <li Class="StorytellerCompProperties_OnOffCycle">
