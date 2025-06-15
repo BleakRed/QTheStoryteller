@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Q The Storyteller</name>
+    <author>Bleak Red</author>
+    <url></url>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<packageId>BR.QStoryTeller</packageId>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+	</loadAfter>
+    <description>Q The half-Incubus, half-Succubus born from  lust of an extremely puritanical man who was participating in a unbounded version of NNN.</description>
+</ModMetaData>
