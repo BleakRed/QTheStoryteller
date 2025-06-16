@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<XenotypeDef>
+    <defName>BR_FoocubusXeno</defName>
+    <label>Foocubus</label>
+    <description>Red-eyed beings with horns, purple hair, and blue skin. Emotionally intense and physically attractive.</description>
+    <inheritable>true</inheritable>
+    <iconPath>UI/XenoIcon/Foobucus</iconPath>
+    <genes>
+        <li>WoundHealing_Slow</li>
+        <li>PsychicBonding</li>
+        <li>MinTemp_SmallIncrease</li>
+        <li>KindInstinct</li>
+        <li>Libido_High</li>
+        <li>Beauty_Beautiful</li>
+        <li>Eyes_Red</li>
+        <li>Headbone_MiniHorns</li>
+        <li>Hair_LightPurple</li>
+        <li>Skin_Purple</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

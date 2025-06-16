@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- =========================== Good - special ============================-->
+
+  <IncidentDef>
+    <defName>BR_DevilInBlackINC</defName>
+    <label>man in the coat</label>
+    <category>Special</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>IncidentWorker_WandererJoin</workerClass>
+    <letterLabel>Foobucus in the Coat</letterLabel>
+    <letterText>Sensing trouble, a mysterious [PAWN_kind] has arrived.\n\nWill [PAWN_pronoun] be able to help the current situation and close the wounds?</letterText>
+    <baseChance>0</baseChance>
+    <minRefireDays>60</minRefireDays>
+    <minGreatestPopulation>3</minGreatestPopulation>
+    <pawnKind>BR_DevilInBlack</pawnKind>
+    <pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
+  </IncidentDef>
+
+</Defs>

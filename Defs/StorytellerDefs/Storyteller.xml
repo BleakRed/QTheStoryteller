@@ -3,8 +3,7 @@
     <StorytellerDef ParentName="BaseStoryteller">
         <defName>QTheStoryTeller</defName>
         <label>Q The Storyteller</label>
-        <description>Q is a very forgiving storyteller that gives you a lot of time between raids and lots of quest. 
-          She/He/They may seem easy but she gives you a little harder raids then normal.</description>
+        <description>Q is a very forgiving storyteller that gives you a lot of time between raids and lots of quest. She/He/They may seem easy but she gives you a little harder raids as your more people are in the colony.</description>
         <portraitLarge>Storytellers/QBig</portraitLarge>
         <portraitTiny>Storytellers/QSmall</portraitTiny>
         <listOrder>80</listOrder>
@@ -31,9 +30,9 @@
         <li Class="StorytellerCompProperties_OnOffCycle">
             <category>ThreatBig</category>
 				<minDaysPassed>30.0</minDaysPassed>
-				<onDays>4.6</onDays>
-				<offDays>30.0</offDays>
-				<minSpacingDays>29</minSpacingDays>
+				<onDays>2</onDays>
+				<offDays>28.0</offDays>
+				<minSpacingDays>28</minSpacingDays>
 				<numIncidentsRange>1</numIncidentsRange>
 				<forceRaidEnemyBeforeDaysPassed>30</forceRaidEnemyBeforeDaysPassed>
 				<disallowedTargetTags>
@@ -77,7 +76,7 @@
             <minDaysPassed>15.0</minDaysPassed>
             <onDays>3</onDays>
             <offDays>15.0</offDays>
-            <numIncidentsRange>0.2~1</numIncidentsRange>
+            <numIncidentsRange>1</numIncidentsRange>
             <acceptPercentFactorPerThreatPointsCurve>
               <points>
                 <li>(800, 1)</li>
@@ -172,7 +171,7 @@
                 <li>(15, 1)</li>
               </points>
             </acceptFractionByDaysPassedCurve>
-            <minSpacingDays>1</minSpacingDays>
+            <minSpacingDays>3</minSpacingDays>
             <disableIfAnyModActive>
               <li>Ludeon.RimWorld.Royalty</li>
             </disableIfAnyModActive>
@@ -182,7 +181,7 @@
             <allowedTargetTags>
               <li>World</li>
             </allowedTargetTags>
-            <onDays>1</onDays>
+            <onDays>3</onDays>
             <numIncidentsRange>1</numIncidentsRange>
             <acceptFractionByDaysPassedCurve>
               <points>
@@ -190,7 +189,7 @@
                 <li>(15, 1)</li>
               </points>
             </acceptFractionByDaysPassedCurve>
-            <minSpacingDays>1</minSpacingDays>
+            <minSpacingDays>3</minSpacingDays>
             <enableIfAnyModActive>
               <li>Ludeon.RimWorld.Royalty</li>
             </enableIfAnyModActive>
@@ -212,6 +211,16 @@
           <li Class="StorytellerCompProperties_Triggered">
             <incident>StrangerInBlackJoin</incident>
             <delayTicks>180</delayTicks>
+            <disableIfAnyModActive>
+              <li>Ludeon.RimWorld.Biotech</li>
+            </disableIfAnyModActive>
+          </li>
+          <li Class="StorytellerCompProperties_Triggered">
+            <incident>BR_DevilInBlackINC</incident>
+            <delayTicks>180</delayTicks>
+            <enableIfAnyModActive>
+              <li>Ludeon.RimWorld.Biotech</li>
+            </enableIfAnyModActive>
           </li>
     </comps>
     </StorytellerDef>
