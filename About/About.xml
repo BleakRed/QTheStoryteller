@@ -10,6 +10,7 @@
 	<packageId>BR.QStoryTeller</packageId>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Biotech</li>
 	</loadAfter>
     <description>Q The half-Incubus, half-Succubus born from  lust of an extremely puritanical man who was participating in a unbounded version of NNN.</description>
 </ModMetaData>
