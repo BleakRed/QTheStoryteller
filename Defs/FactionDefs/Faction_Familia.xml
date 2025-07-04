@@ -3,17 +3,17 @@
 
   <FactionDef ParentName="FactionBase">
     <defName>FoocubusFamilia</defName>
-    <label>the familia</label>
-    <description>A hyper-advanced syndicate of Foocubi, structured more like a family than a nation. Though their speech is soft and their gestures kind, their power is that of the gods themselves.</description>
+    <label>Ze Familia</label>
+    <description>A hyper-advanced syndicate of Foocubi, structured more like a family than a nation. Though their speech is soft and their gestures kind, their power is almost similar to that of the Empire themselves.</description>
     <pawnSingular>familian</pawnSingular>
     <pawnsPlural>familians</pawnsPlural>
     <categoryTag>FoocubusFamilia</categoryTag>
     <leaderTitle>matron</leaderTitle>
     <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
-    <settlementTexturePath>UI/XenoIcon/Foobucus</settlementTexturePath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     <factionNameMaker>NamerFactionFamilia</factionNameMaker>
     <settlementNameMaker>NamerSettlementFamilia</settlementNameMaker>
-    <techLevel>Spacer</techLevel>
+    <techLevel>Ultra</techLevel>
     <classicIdeo>true</classicIdeo>
 
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -35,13 +35,25 @@
     </requiredMemes>
     <allowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
     </allowedMemes>
+
     <xenotypeSet>
       <xenotypeChances>
+        <Baseliner>0.1</Baseliner>
         <BR_FoocubusXeno MayRequire="Ludeon.RimWorld.Biotech">0.85</BR_FoocubusXeno>
         <Genie MayRequire="Ludeon.RimWorld.Biotech">0.05</Genie>
         <Waster MayRequire="Ludeon.RimWorld.Biotech">0.05</Waster>
-        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0.05</Highmate>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.05</Pigskin>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.05</Yttakin>  
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.05</Pigskin>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.05</Yttakin>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.05</Dirtmole>
+
+        <!-- <Highmate MayRequire="Ludeon.RimWorld.Biotech">0.05</Highmate> -->
       </xenotypeChances>
     </xenotypeSet>
 
@@ -71,27 +83,34 @@
       <li>
         <kindDef>Combat</kindDef>
         <options>
-          <Mercenary_Gunner>10</Mercenary_Gunner>
-          <Mercenary_Elite>12</Mercenary_Elite>
-          <Town_Councilman>5</Town_Councilman>
-          <Grenadier_Destructive>3</Grenadier_Destructive>
+          <Mercenary_Gunner>5</Mercenary_Gunner>
+          <Mercenary_Elite>20</Mercenary_Elite>
+          <!-- <Town_Councilman>5</Town_Councilman> -->
+          <Grenadier_Destructive>5</Grenadier_Destructive>
+          <Empire_Fighter_Cataphract>10</Empire_Fighter_Cataphract>
+
         </options>
       </li>
       <li>
         <kindDef>Peaceful</kindDef>
         <options>
           <Villager>10</Villager>
-          <Town_Councilman>6</Town_Councilman>
-          <Villager_Child>4</Villager_Child>
+          <!-- <Town_Councilman>6</Town_Councilman> -->
+          <!-- <Villager_Child>4</Villager_Child> -->
         </options>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
+          <Mercenary_Gunner>10</Mercenary_Gunner>
+          <Mercenary_Elite>20</Mercenary_Elite>
+          <!-- <Town_Councilman>5</Town_Councilman> -->
+          <Grenadier_Destructive>3</Grenadier_Destructive>
           <Villager>10</Villager>
-          <Mercenary_Gunner>6</Mercenary_Gunner>
-          <Town_Guard>6</Town_Guard>
-          <Town_Councilman>6</Town_Councilman>
+          <!-- <Town_Guard>6</Town_Guard> -->
+          <!-- <Villager_Child>4</Villager_Child> -->
+          <!-- <Town_Trader>1</Town_Trader> -->
+          <Empire_Fighter_Cataphract>10</Empire_Fighter_Cataphract>
         </options>
       </li>
       <li>
@@ -105,7 +124,7 @@
         </carriers>
         <guards>
           <Mercenary_Gunner>3</Mercenary_Gunner>
-          <Town_Guard>2</Town_Guard>
+          <Mercenary_Elite>2</Mercenary_Elite>
         </guards>
       </li>
     </pawnGroupMakers>
@@ -117,7 +136,23 @@
         </categories>
         <commonality>1</commonality>
       </li>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>1</commonality>
+      </li>
     </backstoryFilters>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
   </FactionDef>
 
   <!-- Loot -->
@@ -133,25 +168,32 @@
             <li>Neurotrainer</li>
             <li>PsylinkNeuroformer</li>
             <li>GoJuice</li>
+            <!-- <li>Persona_Core</li> -->
+            <li>Gold</li>
+            <li>MedicineUltratech</li>
+            <li>Uranium</li>
+            <li>MealSurvivalPack</li>
           </thingDefs>
         </filter>
       </fixedParams>
     </root>
   </ThingSetMakerDef>
 
-  <!-- NAME GENERATORS -->
-
-  <!-- Fix these parts -->
+  <!-- Name Generators -->
   <RulePackDef>
     <defName>NamerFactionFamilia</defName>
     <rulePack>
       <rulesStrings>
-        <!-- these 2 were causing errors -->
-        <!-- <li>Family of Families</li>
-        <li>Family of Familia</li> -->
         <li>r_name->Family of [familian_name]</li>
-        <li>familian_name->[Familiaz]</li>
-        <li>familian_name->[Familiaz][townsuffix]</li>
+        <li>familian_name->[namebase]</li>
+        <li>familian_name->[namebase][townsuffix]</li>
+  
+        <li>namebase->Nyra</li>
+        <li>namebase->Zyrae</li>
+        <li>namebase->Thessal</li>
+        <li>namebase->Aezra</li>
+        <li>namebase->Erelith</li>
+  
         <li>townsuffix->ium</li>
         <li>townsuffix->lor</li>
         <li>townsuffix->phor</li>
@@ -159,12 +201,19 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
-
+  
   <RulePackDef>
     <defName>NamerSettlementFamilia</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_name->[Familiaz][settlementend]</li>
+        <li>r_name->[namebase][settlementend]</li>
+  
+        <li>namebase->Nyra</li>
+        <li>namebase->Zyrae</li>
+        <li>namebase->Thessal</li>
+        <li>namebase->Aezra</li>
+        <li>namebase->Erelith</li>
+  
         <li>settlementend->heim</li>
         <li>settlementend->lan</li>
         <li>settlementend->dom</li>
@@ -172,5 +221,6 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
+  
 
 </Defs>

@@ -8,9 +8,17 @@
 		<li>1.6</li>
 	</supportedVersions>
 	<packageId>BR.QStoryTeller</packageId>
+	<modDependencies>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
 	</loadAfter>
     <description>Q The half-Incubus, half-Succubus born from  lust of an extremely puritanical man who was participating in a unbounded version of NNN.</description>
 </ModMetaData>
