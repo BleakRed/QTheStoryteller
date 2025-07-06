@@ -3,7 +3,7 @@
     <StorytellerDef ParentName="BaseStoryteller">
         <defName>QTheStoryTeller</defName>
         <label>Q The Storyteller</label>
-        <description>Q is a very forgiving storyteller that gives you a lot of time between raids and lots of quest. She/He/They may seem easy but she gives you a little harder raids as your more people are in the colony.</description>
+        <description>Q is a very forgiving storyteller that gives you a lot of time between raids and lots of quest and I MEAN LOTS. She/He/They may seem easy but she gives you a little harder raids as your more people are in the colony. If you want to leave the planet through the Ship ending you will have to clear her/his 15 days of test first</description>
         <portraitLarge>Storytellers/QBig</portraitLarge>
         <portraitTiny>Storytellers/QSmall</portraitTiny>
         <listOrder>80</listOrder>
@@ -27,13 +27,12 @@
         <!-- Intro -->
         <li Class="StorytellerCompProperties_ClassicIntro" />
         <li Class="StorytellerCompProperties_OnOffCycle">
-            <category>ThreatBig</category>
-				<minDaysPassed>30.0</minDaysPassed>
-				<onDays>2</onDays>
-				<offDays>28.0</offDays>
-				<minSpacingDays>28</minSpacingDays>
-				<numIncidentsRange>1</numIncidentsRange>
-				<!-- <forceRaidEnemyBeforeDaysPassed>30</forceRaidEnemyBeforeDaysPassed> -->
+        <category>ThreatBig</category>
+				<minDaysPassed>15.0</minDaysPassed>
+        <onDays>2</onDays>
+        <offDays>28</offDays>
+        <minSpacingDays>1</minSpacingDays>
+        <numIncidentsRange>1</numIncidentsRange>
 				<disallowedTargetTags>
 					<li>Map_RaidBeacon</li>
 				</disallowedTargetTags>
