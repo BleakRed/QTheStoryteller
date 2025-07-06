@@ -4,7 +4,7 @@
   <FactionDef ParentName="FactionBase">
     <defName>FoocubusFamilia</defName>
     <label>Ze Familia</label>
-    <description>A hyper-advanced syndicate of Foocubi, structured more like a family than a nation. Though their speech is soft and their gestures kind, their power is almost similar to that of the Empire themselves.</description>
+    <description>A advanced syndicate of Foocubi, structured more like a family than a nation. Though their speech is soft and their gestures kind, their power is almost similar to that of the Empire themselves.</description>
     <pawnSingular>familian</pawnSingular>
     <pawnsPlural>familians</pawnsPlural>
     <categoryTag>FoocubusFamilia</categoryTag>
@@ -84,10 +84,10 @@
         <kindDef>Combat</kindDef>
         <options>
           <Mercenary_Gunner>5</Mercenary_Gunner>
-          <Mercenary_Elite>20</Mercenary_Elite>
+          <Mercenary_Elite>200</Mercenary_Elite>
           <!-- <Town_Councilman>5</Town_Councilman> -->
           <Grenadier_Destructive>5</Grenadier_Destructive>
-          <Empire_Fighter_Cataphract>10</Empire_Fighter_Cataphract>
+          <Empire_Fighter_Cataphract MayRequire="Ludeon.RimWorld.Royalty">10</Empire_Fighter_Cataphract>
 
         </options>
       </li>
@@ -103,14 +103,14 @@
         <kindDef>Settlement</kindDef>
         <options>
           <Mercenary_Gunner>10</Mercenary_Gunner>
-          <Mercenary_Elite>20</Mercenary_Elite>
+          <Mercenary_Elite>200</Mercenary_Elite>
           <!-- <Town_Councilman>5</Town_Councilman> -->
           <Grenadier_Destructive>3</Grenadier_Destructive>
           <Villager>10</Villager>
           <!-- <Town_Guard>6</Town_Guard> -->
           <!-- <Villager_Child>4</Villager_Child> -->
           <!-- <Town_Trader>1</Town_Trader> -->
-          <Empire_Fighter_Cataphract>10</Empire_Fighter_Cataphract>
+          <Empire_Fighter_Cataphract MayRequire="Ludeon.RimWorld.Royalty">10</Empire_Fighter_Cataphract>
         </options>
       </li>
       <li>

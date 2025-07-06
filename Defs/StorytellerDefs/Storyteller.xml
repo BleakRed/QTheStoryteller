@@ -62,10 +62,10 @@
             </allowedTargetTags>
             <parms>
                 <allowedThreats>Raids</allowedThreats>
-                <onDays>0.1</onDays>
+                <onDays>1</onDays>
                 <offDays>0.1</offDays>
                 <minSpacingDays>0.1</minSpacingDays>
-                <numIncidentsRange>10</numIncidentsRange>
+                <numIncidentsRange>2~5</numIncidentsRange>
                 <minThreatPoints>10000</minThreatPoints>
             </parms>
         </li>
